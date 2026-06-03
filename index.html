@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Practice Website</title>
+    <style>
+        body {
+            background-color: #a6dfb3;
+            margin: 0;
+            padding-top: 4rem;
+            font-family: Arial, sans-serif;
+        }
+
+        p.highlight {
+            font-family: Georgia, serif;
+        }
+
+        a:link,
+        a:visited {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: #d23669;
+            text-decoration: underline;
+            outline: 2px dashed #d23669;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.5rem 1rem;
+            background: #ffffff;
+            color: #0056b3;
+            text-decoration: none;
+            border: 2px solid #0056b3;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+
+        .skip-link:hover,
+        .skip-link:focus {
+            background: #0056b3;
+            color: #ffffff;
+            outline: 3px solid #d23669;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid #333;
+        }
+
+        th,
+        td {
+            border: 1px solid #555;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d7d717;
+        }
+
+        .form-grid {
+            display: grid;
+            gap: 12px;
+            max-width: 420px;
+        }
+    </style>
+</head>
+<body>
+
+        <a href="#page-title" class="skip-link">Skip to main content</a>
+
+    <main id="main-content" role="main" aria-labelledby="page-title" tabindex="-1">
+            <header>
+            <h1 id="page-title" tabindex="-1">HTML Practice Website</h1>
+
+            <p>Welcome to my first HTML page! The items on this page demonstrate the various HTML elements and their styling that I have learned during module 2 and 3.</p>
+            <p class="highlight">Although this is my first time developing an <strong>HTML</strong> page, I am excited to showcase the different elements and their <em>styling</em>.</p>
+            <p>Let's take a look at just how much we can accomplish with developing a website using Visual Studio code to write HTML and CSS.</p>
+        </header>
+
+
+        <section aria-labelledby="basic-elements-heading">
+            <h2 id="basic-elements-heading">Basic HTML Elements</h2>
+        <p>This section provides examples of the basic HTML elements and their styling.</p>
+
+        <p>Examples of superscript and subscript: x<sup>2</sup> and subscript: H<sub>2</sub>.</p>
+
+        <ul>
+            <li>First bullet item</li>
+            <li>Second bullet item</li>
+            <li>Third bullet item</li>
+        </ul>
+        <img src="data:image/png;base64,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" alt="Illustration of web development elements including an HTML file, code symbols, a keyboard, and a USB drive.">
+
+        <ol>
+            <li>First numbered item</li>
+            <li>Second numbered item</li>
+            <li>Third numbered item</li>
+        </ol>
+
+             <p>Visit <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Example Website</a> for an external resource.</p>
+        </section>
+
+        <section aria-labelledby="advanced-elements-heading">
+            <h2 id="advanced-elements-heading">More Advanced Elements</h2>
+        <p>Here are some more advanced elements, including a complex image, data table, and form examples.</p>
+
+
+        <figure>
+            <img src="https://plain-enam-prod-public.komododecks.com/202606/02/aVNt4C5cm1WPYLZmqGyk/image.png" alt="A girl on the left while holding a puppy on the right" aria-describedby="complex-image-desc" width="320" height="180">
+            <figcaption>Young woman holding a puppy while smiling.</figcaption>
+        </figure>
+        <div id="complex-image-desc" hidden>
+            This image shows a girl smiling on the left while holding a puppy on the right, close to her face. 
+        </div>
+
+
+        <table>
+            <caption>Product pricing and stock availability</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Notebook</th>
+                    <td>$12.99</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <th scope="row">Pen Set</th>
+                    <td>$5.49</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sticky Notes</th>
+                    <td>$3.99</td>
+                    <td>65</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <form action="#" method="post" class="form-grid">
+            <fieldset>
+                <legend>Contact Preferences</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to updates
+                </label>
+
+                <div>
+                    <label for="contact-email"><input type="radio" id="contact-email" name="contact" value="email"> Email</label>
+                    <label for="contact-phone"><input type="radio" id="contact-phone" name="contact" value="phone"> Phone</label>
+                </div>
+
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+        </section>
+
+       </main>
+</body>
+</html>
